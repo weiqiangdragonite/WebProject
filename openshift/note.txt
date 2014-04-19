@@ -1,0 +1,27 @@
+
+fedora:
+
+yum install rubygem-rhc
+gem install rhc
+
+rhc setup --autocomplete
+rhc setup
+
+sudo gem update rhc
+
+--------------------------------------------------------------------------------
+
+Making Changes to your Application:
+
+$ git clone <git_url> <directory to create>
+
+$ git add .
+$ git commit -m "A checkin to my application"
+
+$ git push
+
+--------------------------------------------------------------------------------
+
+Remote access:
+
+ssh xxx
