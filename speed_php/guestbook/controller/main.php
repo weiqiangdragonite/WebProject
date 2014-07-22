@@ -8,8 +8,7 @@ class main extends spController
 		$posturl = spUrl("main", "write");
 
 		echo "<p align=center><h2>我的留言本</h2></p>";
-		/* 下面做一个表单来提交留言，请注意这些输入框的name属性，它们都对应了
-		数据表guestbook的字段名！ */
+		/* 下面做一个表单来提交留言，请注意这些输入框的name属性，它们都对应了数据表guestbook的字段名！ */
 		echo "<p>请写下您的留言：</p><form action={$posturl} method=POST><p>您的名字：<input type=text name=name></p><p>留言标题：<input type=text name=title></p><p>留言内容：<textarea name=contents></textarea></p><p><input type=submit value=提交></p></form>";
 
 		/* 用spClass来初始化留言本数据表对象（模型类对象） */
@@ -32,7 +31,7 @@ class main extends spController
 		/* 还是用spClass */
 		$guestbook = spClass("guestbook");
 		/* 制造查找条件，这里是使用ID来查找属于ID的那条留言记录 */
-		$condition = array('id'=>$id);
+		$condition = array('id' => $id);
 		/* 这次是用find来查找，我们把$condition（条件）放了进去 */
 		$result = $guestbook->find($condition);
 		/* 下面输出了该条留言内容 */
