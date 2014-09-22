@@ -5,7 +5,7 @@
 define("APP_PATH", dirname(__FILE__));
 
 /* sp框架的目录，SpeedPHP.php文件所在的目录 */
-define("SP_PATH", dirname(__FILE__) . '/SpeedPHP');
+define("SP_PATH", dirname(__FILE__).'/SpeedPHP');
 
 /* 这里开始是应用程序的配置 */
 $spConfig = array(

@@ -2,6 +2,7 @@
  * Database: guestbook
  */
 
+DROP TABLE IF EXISTS `guestbook`;
 CREATE TABLE `guestbook` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(64),
